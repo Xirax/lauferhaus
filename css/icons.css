@@ -1,0 +1,110 @@
+
+.icon{
+
+    width: 24px;
+    height: 24px;
+
+    margin-right: 12px;
+    object-fit: scale-down;
+
+    opacity: 0.82;
+}
+
+.styled-icon{
+    width: 65px;
+    height: 65px;
+    padding: 12px;
+
+    object-fit: scale-down;
+
+    border: 2px solid var(--accentColor);
+    border-radius: 65px;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.menu-icon{
+    width: 32px;
+    height: 32px;
+
+    margin-right: 12px;
+    border-radius: 8px;
+    object-fit: scale-down;
+
+    opacity: 0.65;
+    cursor: pointer;
+    transition: ease-in-out .08s;
+}
+
+.menu-icon:hover{
+    opacity: 1;
+}
+
+.menu-icon:hover + .menu-desc{
+    opacity: 1;
+}
+
+.cbtn-icon{
+    width: 35px;
+    height: 35px;
+
+    object-fit: scale-down;
+}
+
+.activeLang{
+    opacity: 1;
+}
+
+
+.circle-image{
+    width: 210px;
+    height: 210px;
+
+    border-radius: 210px;
+
+    border: 2px solid var(--accentColor);
+
+    object-fit: cover;
+}
+
+.flag-align{
+    height: 32px;
+}
+
+.back-icon{
+    width: 35px;
+    height: 35px;
+
+    object-fit: scale-down;
+    transform: rotate(90deg);
+
+    opacity: 0.85;
+
+    transition: ease-in-out .08s;
+}
+
+
+.back-icon:hover{
+    transform: rotate(90deg) scale(1.1);
+    opacity: 1;
+}
+
+.popup-icon
+{
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50px;
+    border: solid 1px #ff381d;
+
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+
+@media(max-width: 400px){
+    .back-icon{
+        width: 24px;
+        height: 24px;
+    } 
+}

@@ -1,0 +1,67 @@
+
+#menu{
+    margin-top: 12px;
+
+    width: 96%;
+    min-height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-button{
+    /* width: 160px; */
+    height: 26px;
+
+    padding-left: 26px;
+    padding-right: 26px;
+
+    margin-bottom: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--textColor);
+
+    font-size: 18px;
+
+    transition: ease-in-out .08s;
+    cursor: pointer;
+}
+
+.menu-button:hover{
+    color: var(--accentColor);
+}
+
+.menu-desc{
+    position: absolute;
+    top: 55px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 35px;
+    line-height: 35px;
+
+    white-space: nowrap;
+
+    background-color: white;
+    color: var(--backColor);
+    font-size: 18px;
+    border-radius: 6px;
+
+    transition: ease-in-out .08s;
+    opacity: 0;
+}
+
+#hide-fb-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: var(--backColor);
+}
+
+

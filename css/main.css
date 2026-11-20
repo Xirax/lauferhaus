@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1;0,100;0,400;1,1;1,100;1,400&display=swap');
+
+
+body, html{
+    width: 100%;
+
+    overflow-x: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    --backColor: #191919;
+    --accentColor: #E9BE7A;
+    --lightAccentColor: #CCB590;
+    --textDarkColor: #D1D1D1;
+    --textColor: white;
+
+    background-color: var(--backColor);
+    color: var(--textColor);
+
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+html{ 
+    height: 100%; 
+
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+}
+
+body{ height: 100%; }
+
+#page-content{
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* background-image: url('../imgs/back\ img.jpg'); */
+    background-position: 100% 12%;
+    background-repeat: repeat-x;
+    background-color: var(--backColor);
+
+    box-sizing: border-box;
+    z-index: 20;
+
+    overflow: scroll;
+}
+
+
+#logo{
+    width: 40%;
+
+    margin-top: 12px;
+
+    object-fit: scale-down;
+}
+
+
+#header-logo{
+    height: 65px;
+    object-fit: scale-down;
+}
+
+#back-logo{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top:0;
+    left: 0;
+
+    background-image: url('../imgs/backlogo_final.png');
+    background-size: 2103px 977px;
+    background-position: right;
+
+    opacity: 0.02;
+
+    z-index: 10;
+    pointer-events: none;
+}
+
+.highlighted{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+
+    color: white;
+}
+
+#description{
+    width: 100%;
+    padding: 26px;
+
+    box-sizing: border-box;
+    text-align: left;
+
+    font-size: 16px;
+    color: var(--textColor);
+}
+
+#languages{
+    position: absolute;
+    top: 26px;
+    right: 26px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+a{ text-decoration: none; transition: ease-in-out .08s; cursor: pointer; margin: 0; padding: 0; width: auto; height: auto; color: var(--textColor); }
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: rgba(233, 190, 122, 0.4);
+    width: 100%;
+    height: 26px;
+
+    font-size: 16px;
+    color:  #d9d9d9;
+
+    line-height: 26px;
+    text-align: right;
+
+    padding-right: 65px;
+}
+
+
+.hidden-info{
+    display: none;
+}
+
+
+.header{
+    width: 96%;
+    height: 90px;
+
+    margin-bottom: 90px;
+
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+
+    padding: 24px;
+    box-sizing: border-box;
+
+    border-bottom: 2px solid var(--accentColor);
+
+
+    background-color: var(--backColor);
+}
+
+#header-title{
+    font-size: 26px;
+}
+
+#logo-space{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-bubble{
+
+    height: 45px;
+    width: 96%;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    gap: 12px;
+
+    font-size: 32px;
+    color: white;
+
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    animation: pulse;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 0% 50%;
+
+    transition: ease-in-out .15s;
+    cursor: pointer;
+}
+
+.popup-bubble:hover{
+    color: var(--accentColor);
+}
+
+
+
+@media(max-width: 900px){
+    .popup-bubble{
+        justify-content: center;
+        transform-origin: 50% 50%;
+    }
+}
+
+@media(max-width: 600px){
+    #logo{ width: 32; }
+
+    #header-logo{
+        display: none;
+    }
+
+    .header{
+        width: 95%;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    #header-title{ font-size: 20px; }
+}
+
+

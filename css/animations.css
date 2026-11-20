@@ -1,0 +1,108 @@
+
+.qanimate{
+    animation-duration: .4s;
+    animation-fill-mode: both;
+}
+
+.animate{
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+}
+
+.lanimate{
+    animation-duration: 8s;
+    animation-fill-mode: both;
+}
+
+.conanimate{
+    animation-duration: 9s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.card-in{ animation-name: cardIn; }
+.card-out{ animation-name: cardOut; }
+
+.bottom-push{ animation-name: bottomPush; }
+
+.left-push { animation-name: leftPush; }
+
+.push-in{ animation-name: pushIn; }
+
+.rotate-left{ animation-name: rotateLeft; }
+.rotate-right{ animation-name: rotateRight; }
+
+.color-switch { animation-name: colorSwitch; }
+
+.retract { 
+    animation-name: retract, colorSwitch;
+    animation-delay: 0s, 2s; 
+    transform-origin: 50% 100%; 
+}
+
+.e1{ animation-delay: 200ms; }
+.e2{ animation-delay: 400ms; }
+.e3{ animation-delay: 600ms; }
+.e4{ animation-delay: 800ms; }
+.e5{ animation-delay: 1000ms; }
+
+
+@keyframes cardIn {
+    0%{ transform: translateX(200%); }
+    100%{ transform: translateX(0); }
+}
+
+@keyframes cardOut {
+    0%{ transform: translateX(0); }
+    100%{ transform: translateX(-200%); }
+}
+
+@keyframes bottomPush {
+    0%{
+        opacity: 0;
+        transform: translateY(200%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%{ transform: scale(1); }
+    50%{ transform: scale(1.06); }
+    100%{ transform: scale(1); }
+}
+
+@keyframes leftPush {
+    0% { opacity: 0; transform: translateX(50%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes colorSwitch {
+    0%{ background-color: var(--accentColor); }
+    100%{ background-color: transparent; }
+}
+
+
+@keyframes pushIn {
+    0%{ opacity: 0; transform: scale(0); }
+    100%{ opacity: 1; transform: scale(1); }
+}
+
+@keyframes retract {
+    0%{ transform: scaleY(0); }
+    100%{ transform: scaleY(1); }
+}
+
+@keyframes rotateLeft {
+    0%{ transform: rotate(0); }
+    100%{ transform: rotate(360deg); }
+}
+
+@keyframes rotateRight {
+    0%{ transform: rotate(0); }
+    100%{ transform: rotate(-360deg); }
+}

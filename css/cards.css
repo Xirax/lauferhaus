@@ -1,0 +1,114 @@
+#cards-space{
+    width: 100%;
+
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{ 
+    margin-top: 45px; 
+    font-size: 20px;
+
+    display: none;
+}
+
+
+#about-card{ 
+    width: 45%; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    text-align: center;
+}
+
+#contact-card{
+    width: 45%;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+
+    text-align: center;
+}
+
+#contact-card > div{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+#location-card{
+    width: 70%;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+
+    text-align: center;
+}
+
+#location-card > div {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+#fed-card{
+    width: 70%;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+
+    text-align: center; 
+}
+
+.cabinet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+a.cabinet:hover{
+    color: var(--accentColor);
+}
+
+#close-button{
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+
+    position: fixed;
+    top: 45px;
+    right: 35px;
+
+    background-color: white;
+    color: var(--backColor);
+
+    border-radius: 45px;
+
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    display: none;
+    z-index: 100;
+}
+
+
+@media(max-width: 1300px){
+    .card{ font-size: 16px; }
+}
+
+@media(max-width: 800px){
+    #contact-card > div{ flex-direction: column; }
+    #location-card > div{ flex-direction: column; }
+    #fed-card { flex-direction: column; }
+}
+
+
